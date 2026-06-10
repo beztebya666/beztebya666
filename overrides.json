@@ -1,11 +1,33 @@
 {
-  "_help": "Hand edits merged over the GitHub API data on every refresh; this file is never overwritten by automation. Key = repository name. Fields: about — replaces the description; lang — replaces the language; demo — demo URL, set \"\" to show plain text without a link; order — lower number floats higher (default: newest first); hide — true to exclude the repo. New repositories appear automatically with their API description until you add them here.",
-  "ansible-ui": { "about": "Web control plane for Ansible and IaC — Terraform, OpenTofu, Pulumi — with a real-PTY live terminal." },
-  "coredns-ui": { "about": "Observability and management console for CoreDNS on Kubernetes — per-query dnstap tracing, Corefile history, diff and doctor.", "demo": "" },
-  "notes-ui": { "about": "Team link and contact directory — SQLite, WebSocket live sync, Helm chart, Chrome extension." },
-  "etcd-ui": { "about": "UI for any etcd cluster — Kubernetes, Patroni, standalone or DIY.", "demo": "" },
-  "k8s-view": { "about": "Multi-cluster Kubernetes dashboard — live WebSocket streaming, exec, logs, port-forward, YAML edit.", "demo": "" },
-  "ssl-domain-exporter": { "about": "Monitoring for SSL certificates and domain registration expiry — web UI, REST API, Prometheus metrics.", "demo": "" },
-  "calico-ui": { "about": "Explorer for Goldmane network flow data from Calico clusters.", "demo": "" },
-  "mongostudio": { "about": "Blazing-fast MongoDB UI — collections, queries, aggregations, live monitoring.", "demo": "https://beztebya666.github.io/mongostudio/" }
+  "_help": "Hand edits merged over the GitHub API data on every refresh; this file is never overwritten by automation. Key = repository name. Fields: about \u2014 replaces the description; lang \u2014 replaces the language; demo \u2014 demo URL, set \"\" to show plain text without a link; order \u2014 lower number floats higher (default: newest first); hide \u2014 true to exclude the repo. New repositories appear automatically with their API description until you add them here.", 
+  "ansible-ui": {
+    "about": "Web control plane for Ansible and IaC \u2014 Terraform, OpenTofu, Pulumi \u2014 with a real-PTY live terminal."
+  }, 
+  "coredns-ui": {
+    "about": "Observability and management console for CoreDNS on Kubernetes \u2014 per-query dnstap tracing, Corefile history, diff and doctor.", 
+    "demo": "https://beztebya666.github.io/coredns-ui/"
+  }, 
+  "notes-ui": {
+    "about": "Team link and contact directory \u2014 SQLite, WebSocket live sync, Helm chart, Chrome extension."
+  }, 
+  "etcd-ui": {
+    "about": "UI for any etcd cluster \u2014 Kubernetes, Patroni, standalone or DIY.", 
+    "demo": "https://beztebya666.github.io/etcd-ui/"
+  }, 
+  "k8s-view": {
+    "about": "Multi-cluster Kubernetes dashboard \u2014 live WebSocket streaming, exec, logs, port-forward, YAML edit.", 
+    "demo": "https://beztebya666.github.io/k8s-view/"
+  }, 
+  "ssl-domain-exporter": {
+    "about": "Monitoring for SSL certificates and domain registration expiry \u2014 web UI, REST API, Prometheus metrics.", 
+    "demo": "https://beztebya666.github.io/ssl-domain-exporter/"
+  }, 
+  "calico-ui": {
+    "about": "Explorer for Goldmane network flow data from Calico clusters.", 
+    "demo": "https://beztebya666.github.io/calico-ui/"
+  }, 
+  "mongostudio": {
+    "about": "Blazing-fast MongoDB UI \u2014 collections, queries, aggregations, live monitoring.", 
+    "demo": "https://beztebya666.github.io/mongostudio/"
+  }
 }
