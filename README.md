@@ -13,7 +13,7 @@ From a single binary or one container to Helm charts and HA deployments · [bez6
 | **[k8s-view](https://github.com/beztebya666/k8s-view)** | Multi-cluster Kubernetes dashboard — live WebSocket streaming, exec, logs, port-forward, YAML edit. | `TypeScript` | demo |
 | **[ssl-domain-exporter](https://github.com/beztebya666/ssl-domain-exporter)** | Monitoring for SSL certificates and domain registration expiry — web UI, REST API, Prometheus metrics. | `Go` | demo |
 | **[calico-ui](https://github.com/beztebya666/calico-ui)** | Explorer for Goldmane network flow data from Calico clusters. | `TypeScript` | demo |
-| **[mongostudio](https://github.com/beztebya666/mongostudio)** | Blazing-fast MongoDB UI — collections, queries, aggregations, live monitoring. | `JavaScript` | demo |
+| **[mongostudio](https://github.com/beztebya666/mongostudio)** | Blazing-fast MongoDB UI — collections, queries, aggregations, live monitoring. | `JavaScript` | [demo](https://beztebya666.github.io/mongostudio/) |
 <!-- projects:end -->
 
 <sub>All public projects, newest first — refreshed automatically once a day; hand-tuned bits live in [overrides.json](overrides.json).</sub>

@@ -7,5 +7,5 @@
   "k8s-view": { "about": "Multi-cluster Kubernetes dashboard — live WebSocket streaming, exec, logs, port-forward, YAML edit.", "demo": "" },
   "ssl-domain-exporter": { "about": "Monitoring for SSL certificates and domain registration expiry — web UI, REST API, Prometheus metrics.", "demo": "" },
   "calico-ui": { "about": "Explorer for Goldmane network flow data from Calico clusters.", "demo": "" },
-  "mongostudio": { "about": "Blazing-fast MongoDB UI — collections, queries, aggregations, live monitoring.", "demo": "" }
+  "mongostudio": { "about": "Blazing-fast MongoDB UI — collections, queries, aggregations, live monitoring.", "demo": "https://beztebya666.github.io/mongostudio/" }
 }
