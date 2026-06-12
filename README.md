@@ -14,6 +14,16 @@ From a single binary or one container to Helm charts and HA deployments · [bez6
 | **[ssl-domain-exporter](https://github.com/beztebya666/ssl-domain-exporter)** | Monitoring for SSL certificates and domain registration expiry — web UI, REST API, Prometheus metrics. | `Go` | [demo](https://beztebya666.github.io/ssl-domain-exporter/) |
 | **[calico-ui](https://github.com/beztebya666/calico-ui)** | Explorer for Goldmane network flow data from Calico clusters. | `TypeScript` | [demo](https://beztebya666.github.io/calico-ui/) |
 | **[mongostudio](https://github.com/beztebya666/mongostudio)** | Blazing-fast MongoDB UI — collections, queries, aggregations, live monitoring. | `JavaScript` | [demo](https://beztebya666.github.io/mongostudio/) |
+
+#### Private projects
+
+| Project | About | Lang |
+|:--|:--|:--|
+| **SpawnerFinder** | Client-side Fabric mod for Minecraft — scans loaded chunks for mob spawners, highlights targets with boxes, tracers, beacons and a HUD compass. | `Java` |
+| **market.** | Marketplace portal for Minecraft SMP trading — listings, shops, private deal chat, Ready/Finish states, profiles, vouches and deal history. | `TypeScript` |
+| **Swarm-Siege** | Mobile Unity game — aim a cannon, grow a drone swarm through gates, fight enemy units and bases, then upgrade through stages. | `C#` |
+| **observator-in-struct** | Real-time architecture-modelling workspace for KCL — Monaco editor, live icepanel-style diagram and file/editor/graph sync kept in lockstep. | `TypeScript` |
+| **netq** | Network-quality probing daemon — checks nodes, protocols and hops for packet loss and latency spikes, exports status and metrics to Prometheus. | `Go` |
 <!-- projects:end -->
 
-<sub>All public projects, newest first — refreshed automatically once a day; hand-tuned bits live in [overrides.json](overrides.json).</sub>
+<sub>Public projects are refreshed automatically once a day; private projects and hand-tuned bits live in [overrides.json](overrides.json).</sub>

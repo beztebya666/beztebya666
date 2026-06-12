@@ -1,4 +1,4 @@
-// Regenerates the project table in README.md between the projects markers
+// Regenerates the project tables in README.md between the projects markers
 // from the live list of public repositories, with manual tweaks merged in
 // from overrides.json (see its _help key). Zero dependencies, Node 18+.
 import { readFileSync, writeFileSync } from "node:fs";
@@ -7,6 +7,7 @@ const USER = "beztebya666";
 
 const overrides = JSON.parse(readFileSync("overrides.json", "utf8"));
 const ov = (name) => overrides[name] ?? {};
+const privateProjects = Array.isArray(overrides._private) ? overrides._private : [];
 
 const headers = { accept: "application/vnd.github+json", "user-agent": USER };
 if (process.env.GITHUB_TOKEN) headers.authorization = `Bearer ${process.env.GITHUB_TOKEN}`;
@@ -26,9 +27,10 @@ const firstSentence = (s) => {
   return (m ? m[0] : cleaned).trim();
 };
 
-const cell = (s) => s.replace(/\|/g, "\\|");
+const cell = (s) => String(s ?? "").replace(/\|/g, "\\|").replace(/\r?\n/g, " ");
+const langCell = (lang) => (lang ? `\`${cell(lang)}\`` : "\u2014");
 
-const rows = repos.map((r) => {
+const publicRows = repos.map((r) => {
   const o = ov(r.name);
   const about = o.about ?? firstSentence(r.description);
   const lang = o.lang ?? r.language;
@@ -36,16 +38,36 @@ const rows = repos.map((r) => {
   return [
     `**[${r.name}](${r.html_url})**`,
     cell(about),
-    lang ? `\`${lang}\`` : "—",
+    langCell(lang),
     demo ? `[demo](${demo})` : "demo",
   ].join(" | ");
 });
 
-const table = [
+const publicTable = [
   "| Project | About | Lang | Demo |",
   "|:--|:--|:--|:--|",
-  ...rows.map((r) => `| ${r} |`),
+  ...publicRows.map((r) => `| ${r} |`),
 ].join("\n");
+
+const privateRows = privateProjects
+  .filter((p) => p && p.name && !p.hide)
+  .map((p) => {
+    const name = p.url ? `**[${cell(p.name)}](${p.url})**` : `**${cell(p.name)}**`;
+    return `| ${name} | ${cell(p.about)} | ${langCell(p.lang)} |`;
+  });
+
+const privateTable = privateRows.length
+  ? [
+      "",
+      "#### Private projects",
+      "",
+      "| Project | About | Lang |",
+      "|:--|:--|:--|",
+      ...privateRows,
+    ].join("\n")
+  : "";
+
+const table = [publicTable, privateTable].filter(Boolean).join("\n");
 
 const readme = readFileSync("README.md", "utf8");
 const updated = readme.replace(
@@ -53,4 +75,4 @@ const updated = readme.replace(
   `$1\n${table}\n$2`,
 );
 writeFileSync("README.md", updated);
-console.log(`README.md: ${repos.length} projects`);
+console.log(`README.md: ${repos.length} public projects, ${privateRows.length} private projects`);
