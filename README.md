@@ -6,6 +6,7 @@ From a single binary or one container to Helm charts and HA deployments · [bez6
 <!-- projects:start -->
 | Project | About | Lang | Demo |
 |:--|:--|:--|:--|
+| **[Probok.Net](https://github.com/beztebya666/Probok.Net)** | Traffic-aware route planner: fastest path from live road data. | `Go` | [demo](https://beztebya666.github.io/Probok.Net/) |
 | **[ansible-ui](https://github.com/beztebya666/ansible-ui)** | Web control plane for Ansible and IaC — Terraform, OpenTofu, Pulumi — with a real-PTY live terminal. | `Go` | [demo](https://beztebya666.github.io/ansible-ui/) |
 | **[coredns-ui](https://github.com/beztebya666/coredns-ui)** | Observability and management console for CoreDNS on Kubernetes — per-query dnstap tracing, Corefile history, diff and doctor. | `TypeScript` | [demo](https://beztebya666.github.io/coredns-ui/) |
 | **[notes-ui](https://github.com/beztebya666/notes-ui)** | Team link and contact directory — SQLite, WebSocket live sync, Helm chart, Chrome extension. | `JavaScript` | [demo](https://beztebya666.github.io/notes-ui/) |
